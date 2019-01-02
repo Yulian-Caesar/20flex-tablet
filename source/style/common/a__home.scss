@@ -1,0 +1,364 @@
+.home {
+  padding: 30px 0 0;
+  background: url(../img/home-bg.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+
+.home .container {
+  position: relative;
+  padding-bottom: 85px;
+}
+
+.home-fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 40px;
+  background-color: #4699b9;
+  padding: 5px 0;
+}
+
+.home-fixed__text {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.home-people {
+  position: absolute;
+  left: -130px;
+  bottom: 0;
+}
+
+.home-people__people {
+  margin-bottom: -4px;
+}
+
+.home-people__grass {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-left: 400px;
+}
+
+.header-logo__title {
+  color: #4699b9;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.header-logo__text {
+  color: #4699b9;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header-wrap {
+  display: flex;
+}
+
+.header-item {
+  display: flex;
+}
+
+.header-item + .header-item {
+  margin-left: 30px;
+}
+
+.header-item__img {
+  margin-right: 10px;
+}
+
+.header-item__text {
+  color: #737f8c;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.header-item__text span {
+  border-bottom: 2px dotted #737f8c;
+}
+
+.header-item__text span:hover {
+  border-bottom: 2px dotted transparent;
+}
+
+
+.home-wrap {
+  display: flex;
+  padding-left: 400px;
+}
+
+.home-content {
+  margin-right: 20px;
+  position: relative;
+}
+
+.home-title {
+  color: #2b3541;
+  font-weight: 900;
+  font-size: 51px;
+  line-height: 1;
+  margin: 0 0 15px;
+}
+
+.home-content__slogan {
+  color: #4699b9;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 500;
+  margin: 0 0 35px;
+}
+
+.home-list {
+  margin-bottom: 50px;
+}
+
+.home-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.home-list__item + .home-list__item {
+  margin-top: 20px;
+}
+
+.home-content__affordable {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+  max-width: 240px;
+  position: relative;
+  z-index: 2;
+}
+
+.home-content__affordable:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  transform: translate(0, -50%);
+  z-index: -1;
+  width: 375px;
+  height: 71px;
+  border-radius: 35px;
+  background-color: #4699b9;
+}
+
+.home-list__img {
+  width: 22px;
+  height: 22px;
+  box-shadow: -5px 9px 32px rgba(183, 191, 194, 0.54);
+  background-color: #4699b9;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+}
+
+.home-product {
+  position: absolute;
+  z-index: 2;
+  left: 150px;
+  bottom: -80px;
+}
+
+.home-product__pills {
+  position: absolute;
+  left: -65px;
+  bottom: -25px;
+}
+
+@media screen and (max-width: 1249px){
+  .form-wrapper:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header {
+    padding-left: 300px;
+  }
+
+  .home-wrap {
+    padding-left: 300px;
+  }
+
+  .home-title {
+    font-size: 45px;
+  }
+
+  .home-content__slogan {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .home-product {
+    width: 180px;
+    left: 90px;
+    bottom: -40px;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  .home-fixed__text {
+    font-size: 16px;
+  }
+  .home {
+    padding: 20px 0 20px;
+  }
+
+  .home .container {
+    padding-bottom: 0;
+  }
+
+  .header {
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .home-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .home-title {
+    font-size: 40px;
+  }
+
+  .home-people {
+    display: none;
+  }
+
+  .home-content {
+    margin-right: 0;
+  }
+
+  .home-title,
+  .home-content__slogan {
+    text-align: center;
+  }
+
+  .home-list {
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+
+  .home-content__affordable {
+    display: none;
+  }
+
+  .home-product {
+    width: 200px;
+    flex: none;
+    position: relative;
+    left: inherit;
+    bottom: inherit;
+  }
+
+  .home-product__pills {
+    left: -70px;
+    bottom: -25px;
+  }
+
+  .form-wrapper {
+    margin-left: 50px;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-logo {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .form-wrapper {
+    margin-left: 30px;
+  }
+
+  .home-list__item + .home-list__item {
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (max-width: 639px){
+  .home {
+    background: #d9f7ff;
+    padding-top: 10px;
+  }
+
+  .home-title {
+    font-size: 37px;
+  }
+
+  .home-content__slogan {
+    font-size: 24px;
+  }
+
+  .home-product {
+    margin-bottom: 40px;
+  }
+
+  .form-wrapper {
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 479px){
+  .home-fixed,
+  .header-logo,
+  .header-item__text {
+    display: none;
+  }
+
+  .header {
+    margin-bottom: 10px;
+  }
+
+  .home-title {
+    font-size: 27px;
+  }
+
+  .home-content__slogan {
+    font-size: 20px;
+  }
+
+  .home-list__img {
+    margin-right: 10px;
+  }
+
+  .home-product {
+    width: 170px;
+  }
+
+  .home-product__pills {
+    width: 140px;
+    left: -40px;
+  }
+
+}

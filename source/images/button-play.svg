@@ -1,0 +1,8 @@
+<svg class="svg-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="60" height="60">
+<style type="text/css">
+	.svg-play .two {fill: #ffffff;}
+	.svg-play .one {fill: #66c3db;}
+</style>
+<circle class="one" r="35" cx="36" cy="36"></circle>
+<polygon class="two" points="28 20 50 36 28 52"></polygon>
+</svg>
