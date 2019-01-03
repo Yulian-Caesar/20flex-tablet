@@ -1,0 +1,53 @@
+<div class="ever-popup-build">
+    <div class="my-popup" id="cloneThis">
+        <div class="ever-popup__close"></div>
+        <div class="popup-wrap">
+            <div class="popup-people">
+                <img src="img/popup-bg.png" alt="">
+            </div>
+            <div class="popup-product">
+                <img src="img/pack-pills.png" alt="">
+            </div>
+            <div class="form-wrapper">
+                <div class="form-box">
+                    <div class="form-box__header">
+                        <h4 class="form-box__title">Успейте купить по&nbsp;промо-цене <br>
+                            <span class="colortext-orange smaller">до <span class="date-0">date</span></span>
+                        </h4>
+                        <div class="price">
+                            <div class="price-old">
+                                <p class="price__title price__title-old">Старая цена</p>
+                                <span class="x_price_previous">9999</span><span class="x_currency">ффф</span>
+                            </div>
+                            <div class="price-new">
+                                <p class="price__title price__title-new">Ваша цена</p>
+                                <span class="x_price_current">999</span><span class="x_currency">ффф</span>
+                            </div>
+                        </div>
+                        <p class="lastpack-text">Осталось упаковок
+                            со&nbsp;скидкой: <span class="lastpack">15</span>
+                        </p>
+                    </div>
+                    <form action="/submit" method="post" class="x_order_form form">
+                        <div class="input-box">
+                            <img class="input-img" src="img/user.svg" alt="">
+                            <input class="form-field form-name" type="text" name="name" placeholder="Мое имя" required="" autocomplete="name">
+                        </div>
+                        <div class="input-box">
+                            <img class="input-img" src="img/phone.svg" alt="">
+                            <input class="form-field form-tel" type="tel" name="phone" placeholder="Мой телефон" required="" autocomplete="tel">
+                        </div>
+                        <button type="submit" class="form__btn btn">
+                            <span class="btn__text btn__text-1">Заказать</span>
+                            <span class="btn__text btn__text-2">со скидкой</span>
+                        </button>
+                        <p class="form-box__star">* при заказе курса</p>
+                    </form>
+                    <div class="form-box__bottom">
+                        <p class="form-box__security"><img src="img/security.svg" alt="">Ваши данные защищены!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

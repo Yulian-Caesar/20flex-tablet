@@ -1,0 +1,108 @@
+.ever-popup__close {
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: -70px !important;
+  z-index: 1;
+  transition: .3s;
+}
+
+.ever-popup__close:before,
+.ever-popup__close:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 35px;
+  height: 10px;
+  background: #fff;
+  transition: all 1s;
+  background: #f57d02 !important;
+}
+
+.ever-popup__close:before {
+  transform: rotate(45deg);
+}
+
+.ever-popup__close:after {
+  transform: rotate(-45deg);
+}
+
+.ever-popup__inner {
+  //width: 550px !important;
+  padding-top: 160px !important;
+}
+
+.ever-popup__inner .form-wrapper {
+  display: inline-block;
+  margin-bottom: -25px;
+  margin-right: -70px;
+}
+
+.ever-popup.show {
+  background-color: #ffffff !important;
+}
+
+.popup-wrap {
+  //background-image: url("../img/home-grass.png");
+  //background: url("../img/home-bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 550px;
+  height: 420px !important;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.popup-people {
+  position: absolute;
+  left: -75px;
+  bottom: 0;
+}
+
+.popup-people img {
+  display: block;
+}
+
+.popup-grass {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.popup-product {
+  position: absolute;
+  left: 20px;
+  bottom: -50px;
+}
+
+@media screen and (max-width: 767px){
+  .popup-people,
+  .popup-product {
+    display: none;
+  }
+
+  .popup-wrap {
+    width: 270px;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  .ever-popup__inner .form-wrapper {
+    margin: 0;
+  }
+
+  .ever-popup__close {
+    right: 0 !important;
+  }
+
+  .ever-popup__inner {
+    padding-top: 35px !important;
+  }
+
+}
