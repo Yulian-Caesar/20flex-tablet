@@ -1,0 +1,179 @@
+.sec-3 {
+  background-image: url(../img/sec3__bg.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #dff5fa;
+}
+
+.sec-3__problem__title {
+  color: #2b3541;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.bold-weight {
+  font-weight: bold;
+}
+
+.sec-3__problem__age {
+  font-size: 28px;
+  font-weight: 900;
+  color: #4699b9;
+  margin-bottom: 30px;
+}
+
+.sec-3__slide {
+  border-left: 2px solid #deedf3;
+  background-image: url(../img/sec3__slider-bg.jpg);
+}
+.sec-3__slide:first-of-type {
+  border-left: 2px solid transparent;
+}
+
+.sec-3__problem__item {
+  position: relative;
+  color: #2b3541;
+  font-size: 17px;
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+
+.sec-3__problem__item:last-of-type {
+  margin-bottom: 0px;
+}
+
+.sec-3__problem__item::after {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/smile.svg);
+  top: 1px;
+  left: 0;
+}
+
+.sec-3__problem {
+  padding: 25px 25px 40px;
+}
+
+.sec-3__face {
+  border-radius: 50%;
+}
+
+.sec-3__review {
+  height: 310px;
+  background-color: #fff;
+  padding: 30px 25px 25px;
+}
+
+.sec-3__name {
+  font-size: 20px;
+  color: #2b3541;
+  font-weight: 500;
+}
+
+.sec-3__age {
+  font-size: 20px;
+  color: #4699b9;
+  font-weight: 500;
+}
+
+.sec-3__city {
+  font-size: 16px;
+  color: #2b3541;
+}
+
+.sec-3__reviewer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sec-3__about-reviewer {
+  padding-bottom: 15px;
+  border-bottom: 4px solid #daedf4;
+  margin-left: 20px;
+}
+
+.sec-3__review-text {
+  color: #2b3541;
+  font-size: 17px;
+}
+.sec-3__quotes {
+  margin-bottom: 5px;
+}
+
+.sec-3__cause-title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #f57373;
+  margin-bottom: 10px;
+}
+
+.sec-3__cause-text {
+  font-size: 17px;
+  color: #6a7179;
+  line-height: 1.4;
+}
+
+.sec-3__cause {
+  height: 170px;
+  padding: 30px 25px 25px;
+}
+
+.slick-dots li {
+  background-color: #e0e6ea;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.slick-dots li button:before,
+.slick-dots li button {
+  content: "" !important;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.slick-dots li button {
+  padding: 0;
+}
+
+.slick-dots .slick-active {
+  background-color: #fff;
+  border-color: #67c4dd;
+}
+.sec-3__slider {
+  padding-bottom: 15px;
+}
+
+@media (max-width: 1199px) {
+  .sec-3__problem {
+    height: 285px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-3__age {
+    display: block;
+  }
+}
+@media (max-width: 639px) {
+  .sec-3__age {
+    display: inline;
+  }
+}
+@media (max-width: 479px) {
+  .sec-3__face {
+    width: 100px;
+    height: 100px;
+  }
+  .sec-3__age {
+    display: block;
+  }
+  .sec-3__review,
+  .sec-3__cause {
+    height: auto;
+  }
+}
