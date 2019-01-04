@@ -580,7 +580,6 @@ iframe {
 }
 @import "common/slick";
 @import "common/slick-theme";
-
 .font {
   &_medium {
     font-weight: 500;
@@ -610,7 +609,10 @@ iframe {
 @import "common/3__review";
 @import "common/4__reasons";
 @import "common/12__review-slider";
-@import "common/popup";
+@import "common/13__using";
+@import "common/14__delivery";
+@import "common/7__doctor";
+// @import "common/popup";
 @media screen and (max-width: 1199px) {
   .container {
     width: 1024px;

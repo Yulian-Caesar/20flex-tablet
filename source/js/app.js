@@ -2014,87 +2014,97 @@ $(".js-sec-4-slider").slick({
     {
       breakpoint: 640,
       settings: {
-        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1
       }
     }
   ]
 });
-
-$(".js-sec-12-slider").slick({
-  dots: true,
-  arrows: true,
-  infinite: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        dots: true,
-        slidesToShow: 2,
-        slidesToScroll: 1
+$(document).ready(function() {
+  $(".slider").slick({
+    dots: true,
+    prevArrow: $('.slick-prevb'),
+nextArrow: $('.slick-nextb'),
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: true,
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
-    },
-    {
-      breakpoint: 640,
-      settings: {
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+    ]
+  });
 });
 
-var canvas = document.querySelector('.canvas-bg');
-var ctx = canvas.getContext('2d');
+
+
+var canvas = document.querySelector(".canvas-bg");
+var ctx = canvas.getContext("2d");
 var w = 1300;
 var h = 1500;
 canvas.width = w;
 canvas.height = h;
 
 function draw() {
-    ctx.strokeStyle = '#d4e8f1';
+  ctx.strokeStyle = "#d4e8f1";
 
-    for(var i = 0;  i<= 3000; i+=10) {
-        ctx.beginPath()
-        ctx.moveTo(0, -1300 + i);
-        ctx.lineTo(1300, -2600 + i);
+  for (var i = 0; i <= 3000; i += 10) {
+    ctx.beginPath();
+    ctx.moveTo(0, -1300 + i);
+    ctx.lineTo(1300, -2600 + i);
 
-        ctx.stroke();
-        ctx.closePath();
-
-    }
-
+    ctx.stroke();
+    ctx.closePath();
+  }
 }
 
 draw();
 
-
-var canvasrs = document.querySelectorAll('.canvas-bg2');
+var canvasrs = document.querySelectorAll(".canvas-bg2");
 for (var p = 0; p < canvasrs.length; p++) {
-    var ctxx = canvasrs[p].getContext('2d');
-    var wid = 1300;
-    var hei = 1500;
-    canvasrs[p].width = wid;
-    canvasrs[p].height = hei;
+  var ctxx = canvasrs[p].getContext("2d");
+  var wid = 1300;
+  var hei = 1500;
+  canvasrs[p].width = wid;
+  canvasrs[p].height = hei;
 
-    function draws() {
-        ctxx.strokeStyle = '#f5f5f5';
+  function draws() {
+    ctxx.strokeStyle = "#f5f5f5";
 
-        for (var i = 0; i <= 3000; i += 10) {
-            ctxx.beginPath();
-            ctxx.moveTo(0, -1300 + i);
-            ctxx.lineTo(1300, -2600 + i);
+    for (var i = 0; i <= 3000; i += 10) {
+      ctxx.beginPath();
+      ctxx.moveTo(0, -1300 + i);
+      ctxx.lineTo(1300, -2600 + i);
 
-            ctxx.stroke();
-            ctxx.closePath();
-
-        }
-
+      ctxx.stroke();
+      ctxx.closePath();
     }
+  }
 
-    draws();
+  draws();
 }
+
+$(".sec-12-composition-btn").click(function() {
+  $(this)
+    .parent()
+    .toggleClass("active");
+  var text = $(this).text();
+  if (text == "+") {
+    $(this).text("-");
+  } else {
+    $(this).text("+");
+  }
+});

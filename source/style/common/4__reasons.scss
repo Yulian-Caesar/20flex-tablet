@@ -49,7 +49,8 @@
   min-height: 350px;
   padding: 30px 25px;
   border-left: 2px solid #deedf3;
-  background-image: url(../img/sec3__slider-bg.jpg);
+  overflow: hidden;
+  // background-image: url(../img/sec3__slider-bg.jpg);
 }
 .sec-4__senses::after {
   position: absolute;

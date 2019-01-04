@@ -24,7 +24,12 @@
 
 .sec-3__slide {
   border-left: 2px solid #deedf3;
-  background-image: url(../img/sec3__slider-bg.jpg);
+  position: relative;
+  overflow: hidden;
+  // background-image: url(../img/sec3__slider-bg.jpg);
+}
+.sec-3__slide .canvas-wrap {
+  z-index: -1;
 }
 .sec-3__slide:first-of-type {
   border-left: 2px solid transparent;
