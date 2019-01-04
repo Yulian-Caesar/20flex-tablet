@@ -58,7 +58,7 @@ input::-ms-clear {
   color: #2b3541;
   text-align: center;
   font-weight: 900;
-  font-size: 43px;
+  font-size: 44px;
   line-height: normal;
 }
 
@@ -490,4 +490,9 @@ iframe {
   .section {
     padding: 25px 0;
   }
+}
+
+
+.ever-popup {
+  display: none !important;
 }
