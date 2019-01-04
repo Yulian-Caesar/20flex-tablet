@@ -1970,6 +1970,7 @@ function youtubeShowVideo() {
   }
 }
 youtubeShowVideo();
+
 $(".js-sec-3-slider").slick({
   dots: false,
   arrows: false,
@@ -2046,3 +2047,54 @@ $(".js-sec-12-slider").slick({
     }
   ]
 });
+
+var canvas = document.querySelector('.canvas-bg');
+var ctx = canvas.getContext('2d');
+var w = 1300;
+var h = 1500;
+canvas.width = w;
+canvas.height = h;
+
+function draw() {
+    ctx.strokeStyle = '#d4e8f1';
+
+    for(var i = 0;  i<= 3000; i+=10) {
+        ctx.beginPath()
+        ctx.moveTo(0, -1300 + i);
+        ctx.lineTo(1300, -2600 + i);
+
+        ctx.stroke();
+        ctx.closePath();
+
+    }
+
+}
+
+draw();
+
+
+var canvasrs = document.querySelectorAll('.canvas-bg2');
+for (var p = 0; p < canvasrs.length; p++) {
+    var ctxx = canvasrs[p].getContext('2d');
+    var wid = 1300;
+    var hei = 1500;
+    canvasrs[p].width = wid;
+    canvasrs[p].height = hei;
+
+    function draws() {
+        ctxx.strokeStyle = '#f5f5f5';
+
+        for (var i = 0; i <= 3000; i += 10) {
+            ctxx.beginPath();
+            ctxx.moveTo(0, -1300 + i);
+            ctxx.lineTo(1300, -2600 + i);
+
+            ctxx.stroke();
+            ctxx.closePath();
+
+        }
+
+    }
+
+    draws();
+}

@@ -1,0 +1,144 @@
+.effect .canvas-wrap {
+  background: #ffffff;
+}
+
+.effect-title {
+  margin-bottom: 20px !important;
+}
+
+.effect-title__smaller {
+  display: block;
+  color: #656d76;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.effect-box {
+  position: relative;
+}
+
+.effect {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.effect__slider-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.effect__fixed {
+  width: 270px;
+  border: 1px solid #c0dde8;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  overflow: hidden;
+}
+
+.effect__block-item {
+  color: #656d76;
+  font-size: 17px;
+}
+
+.effect__fixed-item,
+.effect__block-item:first-child {
+  color: #2b3541;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.effect__fixed-item,
+.effect__block-item {
+  padding: 20px;
+  position: relative;
+}
+
+.effect__block-item + .effect__block-item,
+.effect__fixed-item + .effect__fixed-item {
+  border-top: 1px solid #c0dde8;
+}
+
+//.effect__fixed-item:nth-child(even),
+//.effect__block-item:nth-child(even) {
+//  background: red;
+//}
+
+.effect__fixed-item:nth-child(odd),
+.effect__block-item:nth-child(odd) {
+  background: #f0f7fa;
+}
+
+
+.effect__block {
+  width: 300px;
+  border: 1px solid #c0dde8;
+  border-right: 0;
+}
+
+.effect__block-another {
+  position: absolute;
+  width: 300px;
+  top: -20px;
+  right: -300px;
+  border-radius: 8px;
+  border: 4px solid #c0dde8;
+}
+
+.effect__block-another .effect__block-item:first-child {
+  border-radius: 6px 6px 0 0;
+}
+
+.effect__block-another .effect__block-item:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
+.effect__block-conclusion {
+  position: relative;
+  color: #f3520b;
+}
+
+.effect__block-conclusion .profit {
+  text-align: center;
+  color: #f3520b;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.effect__block-conclusion .profit span {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.effect__block-conclusion .icon {
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, 0);
+}
+
+.effect__block-conclusion .icon:before,
+.effect__block-conclusion .icon:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 35px;
+  height: 10px;
+  transition: all 1s;
+  background: #f3520b;
+  border-radius: 5px;
+}
+
+.effect__block-conclusion .icon:before {
+  transform: rotate(45deg);
+}
+
+.effect__block-conclusion .icon:after {
+  transform: rotate(-45deg);
+}

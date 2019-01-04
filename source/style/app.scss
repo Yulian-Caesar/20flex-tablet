@@ -484,7 +484,7 @@ input::-ms-clear {
 
 .btn {
   width: 220px;
-  height: 65px;
+  height: 70px;
   border-radius: 5px;
   background-color: #ffffff;
   background-image: linear-gradient(
@@ -515,7 +515,8 @@ input::-ms-clear {
 .btn:hover {
   box-shadow: none;
 }
-.btn:focus {
+.btn:focus,
+.btn:active {
   border-bottom: 0;
 }
 .form-box .btn {
@@ -579,10 +580,29 @@ iframe {
 }
 @import "common/slick";
 @import "common/slick-theme";
+
+.font {
+  &_medium {
+    font-weight: 500;
+  }
+  &_bold {
+    font-weight: 700;
+  }
+  &_black {
+    font-weight: 900;
+  }
+}
+.colortext {
+  &_blue {
+    color: #4699b9;
+  }
+}
 @import "common/a__home";
 @import "common/b__example";
 @import "common/benefits";
 @import "common/components";
+@import "common/course";
+@import "common/effect";
 @import "common/f__expert";
 @import "common/g__reviews";
 @import "common/i__footer";
