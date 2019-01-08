@@ -1,0 +1,36 @@
+.footer {
+  padding: 130px 0 40px;
+}
+
+.privacy-link:hover {
+  color: #ff894f;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-wrap__left {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #666666;
+  font-size: 16px;
+}
+
+.footer-wrap__left .another {
+  color: #4699b9;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-logo {
+  flex: none;
+  margin-right: 18px;
+}
+
+.footer-wrap__right {
+  text-align: right;
+}

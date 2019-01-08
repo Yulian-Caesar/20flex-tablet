@@ -1,0 +1,335 @@
+.sec-9 {
+  background-color: #dff5fa;
+}
+
+.sec-9__title {
+  margin-bottom: 70px;
+}
+.twenty-flex-accent {
+  color: #ff9600;
+  font-weight: 500;
+}
+.sec-9__wrap {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.sec-9__images {
+  position: relative;
+  max-width: 630px;
+  display: flex;
+  align-items: flex-end;
+}
+.sec-9__bg-right {
+  position: absolute;
+  right: -25px;
+  bottom: 75px;
+}
+.sec-9__bg-left {
+  position: absolute;
+  left: -20px;
+  bottom: 80px;
+}
+
+.sec-9__gel-box {
+  position: relative;
+  z-index: 1;
+}
+
+.sec-9__gel-pills {
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+}
+
+.sec-9__gel-pack {
+  max-width: 360px;
+}
+
+.sec-9__pills-box {
+  position: relative;
+  max-width: 208px;
+  z-index: 0;
+  left: -30px;
+  top: -25px;
+}
+
+.sec-9__pills {
+  position: absolute;
+  right: -65px;
+  bottom: -35px;
+}
+
+.sec-9__left-list {
+  max-width: 270px;
+}
+
+.sec-9__right-list {
+  max-width: 270px;
+  position: relative;
+  z-index: 1;
+}
+
+.sec-9__left-item {
+  position: relative;
+  padding-left: 45px;
+  color: #393939;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+.sec-9__left-item:last-of-type {
+  margin-bottom: 0px;
+}
+.sec-9__left-item::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/arrow_blue.svg);
+  border-radius: 50%;
+}
+
+.sec-9__right-item {
+  position: relative;
+  padding-right: 45px;
+  color: #393939;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.sec-9__right-item:last-of-type {
+  margin-bottom: 0px;
+}
+.sec-9__right-item::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/arrow_orange.svg);
+  border-radius: 50%;
+}
+
+.sec-9__sub-title {
+  color: #2b3541;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.sec-9__text {
+  color: #656d76;
+  font-size: 22px;
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+
+.sec-9__input {
+  padding: 20px 25px 20px 25px;
+  width: 220px;
+  height: 65px;
+  -webkit-box-shadow: inset 2px 3px 5px rgba(34, 35, 39, 0.09);
+  box-shadow: inset 2px 3px 5px rgba(34, 35, 39, 0.09);
+  border-radius: 5px;
+  border: 1px solid #dedddd;
+  background-color: #ffffff;
+  color: #899fa8;
+  font-size: 18px;
+  margin-right: 30px;
+}
+.sec-9__input::-webkit-input-placeholder {
+  color: #899fa8;
+  font-size: 18px;
+}
+.sec-9__input::-moz-placeholder {
+  color: #899fa8;
+  font-size: 18px;
+}
+.sec-9__input:-ms-input-placeholder {
+  color: #899fa8;
+  font-size: 18px;
+}
+.sec-9__input:-moz-placeholder {
+  color: #899fa8;
+  font-size: 18px;
+}
+
+.sec-9__form {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1199px) {
+  .sec-9__gel-pack {
+    max-width: 300px;
+  }
+  .sec-9__gel-pills {
+    max-width: 180px;
+  }
+  .sec-9__pills-pack {
+    max-width: 170px;
+  }
+  .sec-9__bg-right {
+    right: 0px;
+    bottom: 50px;
+  }
+  .sec-9__bg-left {
+    left: -10px;
+    bottom: 70px;
+    max-width: 325px;
+  }
+  .sec-9__pills {
+    max-width: 150px;
+  }
+}
+@media (max-width: 1023px) {
+  .sec-9__right-item br,
+  .sec-9__title br {
+    display: none;
+  }
+  .sec-9__wrap {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .sec-9__images {
+    order: 1;
+    margin: 0 auto 40px;
+  }
+  .sec-9__right-list {
+    order: 2;
+  }
+  .sec-9__left-list {
+    order: 3;
+  }
+  .sec-9__right-list,
+  .sec-9__left-list {
+    max-width: 50%;
+  }
+  .sec-9__right-item:first-of-type {
+    height: 50px;
+  }
+  .sec-9__right-item::after {
+    right: 10px;
+  }
+  .sec-9__left-item::after {
+    left: 10px;
+  }
+  .sec-9__wrap {
+    margin-bottom: 30px;
+  }
+  .sec-9__right-item,
+  .sec-9__left-item {
+    margin-bottom: 20px;
+  }
+  .sec-9__sub-title {
+    font-size: 27px;
+  }
+  .sec-9__text {
+    font-size: 20px;
+    margin: 0 auto 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-9__sub-title {
+    font-size: 25px;
+  }
+  .sec-9__text {
+    font-size: 19px;
+  }
+}
+@media (max-width: 639px) {
+  .sec-9__right-item:first-of-type {
+    height: auto;
+  }
+  .sec-9__right-list,
+  .sec-9__left-list {
+    max-width: 100%;
+  }
+  .sec-9__right-item {
+    text-align: left;
+    padding-left: 45px;
+    padding-right: 0px;
+  }
+  .sec-9__right-item::after {
+    right: auto;
+    left: 0;
+  }
+  .sec-9__left-item::after {
+    left: 0;
+  }
+  .sec-9__right-item:last-of-type {
+    margin-bottom: 30px;
+  }
+  .sec-9__images {
+    margin-bottom: 30px;
+  }
+
+  .sec-9__right-item:last-of-type {
+    margin-bottom: 20px;
+  }
+  .sec-9__left-item,
+  .sec-9__right-item {
+    font-size: 17px;
+  }
+  .sec-9__sub-title {
+    font-size: 23px;
+  }
+  .sec-9__text {
+    font-size: 17px;
+  }
+  .sec-9__pills {
+    right: -25px;
+  }
+}
+
+@media (max-width: 479px) {
+  .sec-9__title {
+    margin-bottom: 50px;
+  }
+  .sec-9__gel-pills,
+  .sec-9__pills {
+    display: none;
+  }
+  .sec-9__gel-pack {
+    max-width: 200px;
+  }
+  .sec-9__pills-pack {
+    max-width: 140px;
+  }
+  .sec-9__bg-left {
+    display: none;
+  }
+  .sec-9__pills-box {
+    left: -40px;
+  }
+  .sec-9__bg-right {
+    display: none;
+  }
+  .sec-9__input {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .sec-9__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec-9__images {
+    margin-bottom: 20px;
+  }
+
+  .sec-9__wrap {
+    margin-bottom: 25px;
+  }
+}

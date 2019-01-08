@@ -483,12 +483,12 @@
     border-right: 0;
   }
 
-  .slick-active:nth-child(2) {
+  .effect__slider .slick-active:nth-child(2) {
     border-radius: 0 10px 10px 0;
     overflow: hidden;
   }
 
-  .slick-current {
+  .effect__slider .slick-current {
     border-radius: 0 !important;
   }
 
