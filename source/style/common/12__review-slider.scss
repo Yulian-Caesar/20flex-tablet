@@ -67,7 +67,7 @@
   font-size: 17px;
   text-align: center;
   color: #656d76;
-  padding: 0 35px;
+  padding: 0 10px;
 }
 
 .accent {
@@ -116,8 +116,24 @@
   transition: all 0.5s linear;
 }
 .active .sec-12__overflow {
-  max-height: 100%;
+  // max-height: 100%;
+  max-height: 2000px !important;
+  height: auto !important;
 }
+
+.my-box {
+  max-height: 100px;
+}
+
+.my-box.yulik {
+  height: auto;
+}
+
+.my-btn {
+  position: relative;
+  z-index: 100;
+}
+
 .sec-12__overflow:after {
   position: absolute;
   content: "";
