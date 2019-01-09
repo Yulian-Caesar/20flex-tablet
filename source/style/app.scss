@@ -690,6 +690,7 @@ iframe {
 @import "common/i__gelpills";
 @import "common/j__effect";
 @import "common/k__certificate";
+<<<<<<< HEAD
 @import "common/l__review-slider";
 @import "common/m__using";
 @import "common/n__delivery";
@@ -698,6 +699,17 @@ iframe {
 @import "common/slick";
 @import "common/slick-theme";
 
+=======
+@import "common/new-slider";
+@import "common/12__review-slider";
+@import "common/13__using";
+@import "common/14__delivery";
+@import "common/7__doctor";
+@import "common/owl.carousel.min";
+@import "common/owl.theme.default.min";
+// @import "common/jquery.mCustomScrollbar.min.css";
+// @import "common/popup";
+>>>>>>> 10cfb5a1f9b6fb9e6ecbfdef23cac32a42b1c9a4
 @media screen and (max-width: 1199px) {
   .container {
     width: 1024px;
