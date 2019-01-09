@@ -1,10 +1,10 @@
 .components {
-    font-family: 'Roboto', sans-serif;
-    padding: 100px 0;
+    padding: 75px 0;
 }
 
 .title-components {
-    margin-bottom: 8px;
+    line-height: 1;
+    margin-bottom: 5px;
 }
 
 .subtitle-components {
@@ -145,9 +145,9 @@
     max-width: 821px;
 }
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1199px) {
     .subtitle-components {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .components__item {
@@ -176,11 +176,16 @@
     }
 
     .components__wrap {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 1023px) {
+    .title-components {
+        font-size: 34px !important;
+        line-height: 1 !important;
+    }
+
     .components__row {
         flex-direction: column;
         align-items: center;
@@ -188,10 +193,6 @@
         &::after {
             display: none;
         }
-    }
-
-    .subtitle-components {
-        margin-bottom: 35px;
     }
 
     .components__item {
@@ -214,10 +215,6 @@
         max-width: 130px;
     }
 
-    .components__wrap {
-        margin-bottom: 35px;
-    }
-
     .components__row {
         &:last-child {
             .components__item {
@@ -229,7 +226,7 @@
     }
 
     .components__bottom {
-        font-size: 23px;
+        font-size: 20px;
         br {
             display: none;
         }
@@ -238,6 +235,15 @@
 
 
 @media screen and (max-width: 639px) {
+    .title-components {
+        font-size: 30px !important;
+        line-height: 1 !important;
+    }
+
+    .subtitle-components {
+        font-size: 20px;
+    }
+
     .components__item {
         margin-bottom: 20px;
     }
@@ -250,11 +256,16 @@
     }
 
     .components__bottom {
-        font-size: 21px;
+        font-size: 18px;
     }
 }
 
 @media screen and (max-width: 479px) {
+    .title-components {
+        font-size: 25px !important;
+        line-height: 1 !important;
+    }
+
     .components__item {
         flex-direction: column;
         align-items: center;
@@ -279,7 +290,7 @@
 
     .subtitle-components {
         margin-bottom: 55px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .components__img-3 {

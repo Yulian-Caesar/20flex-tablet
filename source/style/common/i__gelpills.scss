@@ -3,7 +3,8 @@
 }
 
 .sec-9__title {
-  margin-bottom: 70px;
+  line-height: 1;
+  margin-bottom: 60px;
 }
 .twenty-flex-accent {
   color: #ff9600;
@@ -14,7 +15,7 @@
 
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .sec-9__images {
@@ -31,7 +32,7 @@
 .sec-9__bg-left {
   position: absolute;
   left: -20px;
-  bottom: 80px;
+  bottom: 100px;
 }
 
 .sec-9__gel-box {
@@ -41,8 +42,8 @@
 
 .sec-9__gel-pills {
   position: absolute;
-  right: -5px;
-  bottom: 0;
+  right: -13px;
+  bottom: 10px;
 }
 
 .sec-9__gel-pack {
@@ -54,7 +55,7 @@
   max-width: 208px;
   z-index: 0;
   left: -30px;
-  top: -25px;
+  top: -30px;
 }
 
 .sec-9__pills {
@@ -124,7 +125,7 @@
   text-align: center;
   font-size: 28px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .sec-9__text {
@@ -132,7 +133,7 @@
   font-size: 22px;
   text-align: center;
   max-width: 750px;
-  margin: 0 auto 40px;
+  margin: 0 auto 35px;
 }
 
 .sec-9__input {
@@ -171,6 +172,14 @@
 }
 
 @media (max-width: 1199px) {
+  .sec-9__wrap {
+    margin-bottom: 20px;
+  }
+
+  .sec-9__text {
+    margin-bottom: 20px;
+  }
+
   .sec-9__gel-pack {
     max-width: 300px;
   }
@@ -201,10 +210,11 @@
   .sec-9__wrap {
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-bottom: 20px;
   }
   .sec-9__images {
     order: 1;
-    margin: 0 auto 40px;
+    margin: 0 auto 20px;
   }
   .sec-9__right-list {
     order: 2;
@@ -225,9 +235,6 @@
   .sec-9__left-item::after {
     left: 10px;
   }
-  .sec-9__wrap {
-    margin-bottom: 30px;
-  }
   .sec-9__right-item,
   .sec-9__left-item {
     margin-bottom: 20px;
@@ -237,11 +244,18 @@
   }
   .sec-9__text {
     font-size: 20px;
-    margin: 0 auto 30px;
   }
 }
 
 @media (max-width: 767px) {
+  .sec-9__title {
+    font-size: 32px !important;
+    line-height: 1 !important;
+    br {
+      display: none;
+    }
+  }
+
   .sec-9__sub-title {
     font-size: 25px;
   }
@@ -272,9 +286,6 @@
   .sec-9__right-item:last-of-type {
     margin-bottom: 30px;
   }
-  .sec-9__images {
-    margin-bottom: 30px;
-  }
 
   .sec-9__right-item:last-of-type {
     margin-bottom: 20px;
@@ -296,6 +307,8 @@
 
 @media (max-width: 479px) {
   .sec-9__title {
+    font-size: 24px !important;
+    line-height: 1 !important;
     margin-bottom: 50px;
   }
   .sec-9__gel-pills,
@@ -326,10 +339,16 @@
     align-items: center;
   }
   .sec-9__images {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
-  .sec-9__wrap {
-    margin-bottom: 25px;
+  .sec-9__right-item, .sec-9__left-item {
+    margin-bottom: 15px;
   }
+
+  .sec-9__sub-title {
+    font-size: 20px;
+    line-height: 1;
+  }
+
 }

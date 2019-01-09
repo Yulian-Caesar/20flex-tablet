@@ -4,11 +4,13 @@
   background-position: center bottom -40px;
   background-repeat: no-repeat;
   position: relative;
+  padding: 70px 0;
 }
 
 .sec-7__title {
   max-width: 635px;
   margin: 0 auto 5px;
+  line-height: 1.1;
 }
 
 .medium {
@@ -65,9 +67,9 @@
 }
 
 .sec-7__text-block {
-  padding: 0 30px 0 0;
+  //padding: 0 30px 0 0;
   height: 410px;
-  overflow-y: scroll;
+  margin-left: 30px;
 }
 
 .sec-7__paragraph {
@@ -98,7 +100,7 @@
 
 .sec-7__doctor {
   position: absolute;
-  bottom: -84px;
+  bottom: -74px;
   left: -300px;
 }
 
@@ -111,10 +113,43 @@
   width: 100%;
 }
 
+.sec-7__info .mCSB_dragger_bar {
+  background-color: #4699b9 !important;
+  width: 8px !important;
+  position: relative;
+}
+.sec-7__info .mCSB_dragger_bar:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url(../img/ttt.png);
+}
+.sec-7__info .mCSB_inside > .mCSB_container {
+  margin-right: 20px !important;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 4px !important;
+  background-color: #fff !important;
+}
+
+.subtitle-sec-7 {
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
+  color: #6a7179;
+}
+
 @media (max-width: 1199px) {
   .sec-7__doctor {
     bottom: -64px;
-    left: -255px;
+    left: -250px;
+    max-width: 600px;
   }
   .sec-7__doctor-image {
     width: 100%;
@@ -124,7 +159,7 @@
     margin-left: auto;
   }
   .sec-7__info {
-    padding-left: 400px;
+    padding-left: 380px;
   }
   .sec-7__quote {
     position: relative;
@@ -150,6 +185,10 @@
 }
 
 @media (max-width: 1023px) {
+  .subtitle-sec-7 {
+    font-size: 20px;
+  }
+
   .sec-7__info {
     padding-left: 0px;
   }
@@ -169,17 +208,43 @@
 }
 
 @media (max-width: 767px) {
-  margin-bottom: 20px;
+  .subtitle-sec-7 {
+    font-size: 17px;
+  }
+
+  .sec-7__quote {
+    margin-bottom: 20px;
+  }
+
+  .sec-7__paragraph {
+    margin-bottom: 15px;
+  }
+
 }
 
 @media (max-width: 639px) {
+  .sec-7__title {
+    font-size: 31px !important;
+    line-height: 1 !important;
+  }
+
   .sec-7__quote {
     padding: 45px 25px 30px;
   }
 }
 
 @media (max-width: 479px) {
+  .sec-7__title {
+    font-size: 24px !important;
+    line-height: 1 !important;
+  }
+
+  .subtitle-sec-7 {
+    font-size: 16px;
+  }
+
   .sec-7__quote {
+    margin-top: 25px;
     padding: 40px 20px 20px;
   }
   .sec-7__quote-text {

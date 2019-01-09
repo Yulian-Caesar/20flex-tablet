@@ -3,11 +3,13 @@
   background-image: url(../img/sec13__bg.png);
   background-position: center bottom;
   background-repeat: no-repeat;
+  padding: 75px 0 70px;
 }
 
 .sec-13__title {
-  margin-bottom: 85px;
   max-width: 950px;
+  margin: 0 auto 85px;
+  line-height: 1.1;
 }
 
 .bold-accent {
@@ -38,7 +40,7 @@
 .sec-13__image-box {
   position: relative;
   height: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .sec-13__image-box::after {
   position: absolute;
@@ -88,19 +90,43 @@
 }
 
 @media (max-width: 1199px) {
+  .sec-13__title {
+    margin-bottom: 20px;
+  }
+
+  .sec-13__image-box {
+    margin-bottom: 0;
+  }
+
+  .sec-13__wrap {
+    margin-bottom: 20px;
+  }
+
   .sec-13__pills {
     bottom: 10px;
     left: 40px;
   }
+
+  .sec-13__list-title {
+    margin-bottom: 10px;
+  }
+
 }
 @media (max-width: 1023px) {
   .sec-13__title {
-    margin-bottom: 60px;
+    margin-bottom: 10px !important;
   }
+
+  .sec-13__pills {
+    bottom: -20px;
+    left: 0px;
+  }
+
   .sec-13__image-box {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    margin-bottom: 20px;
   }
   .sec-13__item {
     width: 33.33%;
@@ -114,6 +140,14 @@
 }
 
 @media (max-width: 767px) {
+  .sec-13__title {
+    margin-bottom: 0 !important;
+  }
+
+  .sec-13__pills {
+    width: 120px;
+  }
+
   .sec-13__image {
     height: 200px;
   }
@@ -130,47 +164,55 @@
     font-size: 19px;
   }
   .sec-13__list-title {
-    font-size: 23px;
+    font-size: 21px;
   }
 }
 
 @media (max-width: 639px) {
   .sec-13__title {
-    margin-bottom: 30px;
+    margin-bottom: 20px !important;
   }
   .sec-13__wrap {
     flex-wrap: wrap;
-    margin-bottom: 30px;
   }
   .sec-13__item {
     width: 50%;
   }
   .sec-13__image-box {
-    margin-bottom: 15px;
+    height: 200px;
   }
   .sec-13__item:nth-child(3n) {
     margin-top: 20px;
   }
+
+  .sec-13__list-item {
+    font-size: 17px;
+  }
+
 }
 
 @media (max-width: 479px) {
+  .sec-13__title {
+    font-size: 24px !important;
+    line-height: 1 !important;
+  }
+
   .sec-13__item {
-    width: 100%;
+    width: 240px;
     margin-bottom: 10px;
   }
   .sec-13__item:nth-child(3n) {
-    margin-top: 0px;
+    margin-bottom: 0px;
   }
   .sec-13__item-title {
     font-size: 18px;
   }
   .sec-13__list-title {
-    font-size: 21px;
+    font-size: 18px;
   }
+
   .sec-13__list-item {
-    font-size: 17px;
+    font-size: 16px;
   }
-  .sec-13__list {
-    max-width: 260px;
-  }
+
 }

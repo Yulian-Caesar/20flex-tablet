@@ -2,6 +2,15 @@
   color: #df4646;
 }
 
+.sec-4 {
+  padding: 75px 0 70px;
+}
+
+.title-sec-4 {
+  line-height: 1.1;
+  margin-bottom: 5px;
+}
+
 .medium-weight {
   font-weight: 500;
 }
@@ -17,6 +26,13 @@
   padding-bottom: 20px;
   padding-left: 20px;
   border-left: 2px solid #deedf3;
+}
+
+.subtitle-sec-4 {
+  color: #6a7179;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 55px;
 }
 
 .sec-4__reasons {
@@ -79,7 +95,7 @@
 }
 
 .sec-4__slider {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .sec-4__bottom-title {
@@ -88,7 +104,7 @@
   text-align: center;
   color: #2b3541;
   max-width: 610px;
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
 }
 
 .sec-4__sub-title {
@@ -112,9 +128,27 @@
   .sec-4__senses {
     min-height: 395px;
   }
+
+  .subtitle-sec-4 {
+    margin-bottom: 20px;
+  }
+
+  .sec-4__slider {
+    margin-bottom: 20px;
+  }
+
 }
 
 @media (max-width: 1023px) {
+  .title-sec-4 {
+    font-size: 36px !important;
+    line-height: 1 !important;
+  }
+
+  .subtitle-sec-4 {
+    font-size: 20px;
+  }
+
   .sec-4__reasons {
     min-height: 225px;
     padding: 20px 25px 0px;
@@ -131,11 +165,8 @@
     min-height: 330px;
     padding: 25px 25px;
   }
-  .sec-4__slider {
-    padding-bottom: 15px;
-  }
-  .sec-4__slider {
-    margin-bottom: 40px !important;
+  .sec-4__slider .slick-dots {
+    bottom: -17px;
   }
   .sec-4__bottom-title {
     font-size: 25px;
@@ -171,6 +202,10 @@
   }
 }
 @media (max-width: 639px) {
+  .subtitle-sec-4 {
+    font-size: 18px;
+  }
+
   .sec-4__slide-image {
     height: 200px;
   }
@@ -185,7 +220,8 @@
     display: none;
   }
   .sec-4__bottom-title {
-    font-size: 23px;
+    font-size: 20px;
+    line-height: 1;
   }
   .sec-4__sub-title {
     font-size: 18px;
@@ -196,6 +232,11 @@
 }
 
 @media (max-width: 479px) {
+  .title-sec-4 {
+    font-size: 26px !important;
+    line-height: 1 !important;
+  }
+
   .sec-4__slide-image {
     height: auto;
   }
@@ -210,7 +251,7 @@
     line-height: 1.3;
   }
   .sec-4__bottom-title {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
   .sec-4__action-title {

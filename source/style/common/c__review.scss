@@ -3,6 +3,18 @@
   background-position: center bottom -40px;
   background-repeat: no-repeat;
   background-color: #dff5fa;
+  padding: 70px 0;
+}
+
+.title-sec-3 {
+  line-height: 1.1;
+}
+
+.subtitle-sec-3 {
+  color: #6a7179;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 55px;
 }
 
 .sec-3__problem__title {
@@ -157,19 +169,91 @@
   .sec-3__problem {
     height: 285px;
   }
+
+  .subtitle-sec-3 {
+    margin-bottom: 20px;
+  }
+
+  .sec-3__slider {
+    padding-bottom: 0;
+  }
+
 }
 
 @media (max-width: 767px) {
+  .sec-3__problem__item br {
+    display: none;
+  }
+  .sec-3__problem {
+    padding: 20px;
+    height: 245px;
+  }
+
+  .sec-3__about-reviewer {
+    margin-left: 10px;
+  }
+
+  .sec-3__cause {
+    padding: 20px;
+    height: 150px;
+  }
+
+  .sec-3__cause-text {
+    font-size: 16px;
+  }
+
+  .sec-3__problem__age {
+    margin-bottom: 10px;
+  }
+
   .sec-3__age {
     display: block;
   }
 }
 @media (max-width: 639px) {
+  .subtitle-sec-3 {
+    font-size: 20px;
+    line-height: 1;
+  }
+
   .sec-3__age {
     display: inline;
   }
+
+  .sec-3__problem {
+    height: 220px;
+  }
+
+  .sec-3__review {
+    padding: 20px;
+    height: 270px;
+  }
+
+  .sec-3__cause {
+    height: 120px;
+  }
+
+  .sec-3 .slick-dots {
+    bottom: -15px !important;
+  }
+
 }
 @media (max-width: 479px) {
+  .subtitle-sec-3 {
+    font-size: 18px;
+  }
+
+  .sec-3__problem,
+  .sec-3__review,
+  .sec-3__cause {
+    padding: 10px;
+  }
+
+  .title-sec-3 {
+    font-size: 24px !important;
+    line-height: 1 !important;
+  }
+
   .sec-3__face {
     width: 100px;
     height: 100px;
@@ -178,7 +262,16 @@
     display: block;
   }
   .sec-3__review,
+  .sec-3__review,
   .sec-3__cause {
     height: auto;
+  }
+
+  .sec-3 .slick-dotted.slick-slider {
+    margin-bottom: 10px !important;
+  }
+
+  .sec-3 .slick-dots {
+    bottom: -10px !important;
   }
 }
