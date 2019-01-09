@@ -2141,7 +2141,6 @@ $(".js-sec-4-slider").slick({
     }
   ]
 });
-<<<<<<< HEAD
 $(document).ready(function() {
   $(".slider").slick({
     dots: true,
@@ -2170,9 +2169,6 @@ $(document).ready(function() {
     ]
   });
 });
-
-=======
->>>>>>> 10cfb5a1f9b6fb9e6ecbfdef23cac32a42b1c9a4
 
 
 var canvas = document.querySelector(".canvas-bg");
@@ -2265,8 +2261,6 @@ $(".box-scroll").mCustomScrollbar({
 });
 
 
-
-<<<<<<< HEAD
 $(".sec-12-composition-btn").click(function() {
   $(this)
     .parent(".sec-12__slide")
@@ -2278,9 +2272,7 @@ $(".sec-12-composition-btn").click(function() {
     $(this).text("+");
   }
 });
-=======
 
->>>>>>> 10cfb5a1f9b6fb9e6ecbfdef23cac32a42b1c9a4
 
 
 $(document).on('click', 'a[href^="#"]', function (event) {

@@ -4,7 +4,6 @@
   margin: 0 auto;
   padding: 0 5px;
   box-sizing: border-box;
-  font-family: "Roboto";
   position: relative;
 }
 .owl-item .cloned {
@@ -32,7 +31,7 @@
   transform: translateX(-50%);
   bottom: -15px;
   background: url(../img/reviews-plus.svg) no-repeat center/40%, #4699b9;
-  background: url(../img/reviews-plus.svg) no-repeat center/40%, #4699b9;
+  //background: url(../img/reviews-plus.svg) no-repeat center/40%, #4699b9;
 }
 .reviews-item .plus:hover {
   background: url(../img/reviews-plus.svg) no-repeat center/40%, #4699b9;
